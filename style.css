@@ -1,0 +1,107 @@
+/* style.css */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0a0a0a;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #00ff00;
+}
+
+header h1 {
+    margin: 0;
+    color: #00ff00;
+    font-size: 2.5em;
+}
+
+.search-bar {
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+}
+
+.tools-container {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 30px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.category h2 {
+    margin-top: 0;
+    color: #00ff00;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tool {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(50% - 20px);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tool:hover {
+    background-color: #00ff00;
+    color: #0a0a0a;
+}
+
+.tool h3 {
+    margin-top: 0;
+    color: #00ff00;
+}
+
+.tool:hover h3 {
+    color: #0a0a0a;
+}
+
+.copy-btn, .guide-btn {
+    background-color: #00ff00;
+    color: #0a0a0a;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+.tool:hover .copy-btn, .tool:hover .guide-btn {
+    background-color: #0a0a0a;
+    color: #00ff00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #00ff00;
+    margin-top: 20px;
+}
