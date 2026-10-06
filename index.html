@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnonymosMG | Ultimate Hacking Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-skull-crossbones"></i> AnonymosMG</h1>
+        <p>Tous les outils de hacking en un seul endroit</p>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Rechercher un outil (ex: Instagram, WiFi)...">
+    </div>
+
+    <div class="tools-container">
+        <!-- Phishing -->
+        <div class="category">
+            <h2><i class="fas fa-fish"></i> Phishing</h2>
+            <div class="tools">
+                <div class="tool" onclick="window.location.href='tools/phishing/instagram/'">
+                    <h3>Instagram Phishing</h3>
+                    <p>Clone parfait de la page de login Instagram.</p>
+                    <button class="copy-btn" data-clipboard="cd tools/phishing/instagram/ && php -S 127.0.0.1:8080">Copier la commande</button>
+                    <a href="tools/phishing/instagram/guide.md" class="guide-btn">Voir le guide</a>
+                </div>
+                <div class="tool" onclick="window.location.href='tools/phishing/facebook/'">
+                    <h3>Facebook Phishing</h3>
+                    <p>Clone de la page de login Facebook.</p>
+                    <button class="copy-btn" data-clipboard="cd tools/phishing/facebook/ && php -S 127.0.0.1:8080">Copier la commande</button>
+                    <a href="tools/phishing/facebook/guide.md" class="guide-btn">Voir le guide</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brute Force -->
+        <div class="category">
+            <h2><i class="fas fa-key"></i> Brute Force</h2>
+            <div class="tools">
+                <div class="tool">
+                    <h3>Hydra (SSH/FTP/RDP)</h3>
+                    <p>Brute-force pour les comptes SSH, FTP, RDP.</p>
+                    <button class="copy-btn" data-clipboard="hydra -l user -P wordlist.txt ssh://192.168.1.1">Copier la commande</button>
+                    <a href="tools/brute_force/hydra/guide.md" class="guide-btn">Voir le guide</a>
+                </div>
+                <div class="tool">
+                    <h3>Hashcat (GPU)</h3>
+                    <p>Brute-force de mots de passe avec GPU.</p>
+                    <button class="copy-btn" data-clipboard="hashcat -m 2500 capture.hccapx wordlist.txt">Copier la commande</button>
+                    <a href="tools/brute_force/hashcat/guide.md" class="guide-btn">Voir le guide</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- WiFi -->
+        <div class="category">
+            <h2><i class="fas fa-wifi"></i> WiFi Hacking</h2>
+            <div class="tools">
+                <div class="tool">
+                    <h3>Aircrack-ng (WPA2)</h3>
+                    <p>Cracking de réseaux WiFi WPA2.</p>
+                    <button class="copy-btn" data-clipboard="aircrack-ng -w wordlist.txt capture-01.cap">Copier la commande</button>
+                    <a href="tools/wifi/aircrack/guide.md" class="guide-btn">Voir le guide</a>
+                </div>
+                <div class="tool">
+                    <h3>Evil Twin (MITM)</h3>
+                    <p>Attaque Man-in-the-Middle pour WiFi.</p>
+                    <button class="copy-btn" data-clipboard="bettercap -iface wlan0">Copier la commande</button>
+                    <a href="tools/wifi/evil_twin/guide.md" class="guide-btn">Voir le guide</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crypto -->
+        <div class="category">
+            <h2><i class="fab fa-bitcoin"></i> Crypto Hacking</h2>
+            <div class="tools">
+                <div class="tool">
+                    <h3>Bitcoin Brute-Force</h3>
+                    <p>Brute-force de wallets Bitcoin.</p>
+                    <button class="copy-btn" data-clipboard="python3 tools/crypto/bitcoin_brute.py">Copier la commande</button>
+                    <a href="tools/crypto/guide.md" class="guide-btn">Voir le guide</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>⚠️ À utiliser à des fins éducatives uniquement. L'auteur n'est pas responsable de vos actes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('.copy-btn');
+    </script>
+</body>
+</html>
